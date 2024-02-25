@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: contain;
+    font-family: "Kode Mono", monospace;
+}
+
+
+body {
+    background-image: url(/IMAGES/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: #9897a9;
+    filter: blur(4px) white;
+   
+}
+
+.logo {
+    display: flex;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: red;
+    transition: .4s;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.n{
+color: red;
+}
+.b{
+    color: blueviolet;
+
+}
+
+.a{
+    color: white;
+}
+/* home */
+section {
+    padding: 70px 17%;
+}
+
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.home-img img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+  
+}
+
+.home-text h1 {
+    font-size: 5rem;
+    color: blue;
+}
+
+.home-text h2 {
+    font-size:3.5rem;
+    margin: 1rem 0 2rem;
+}
+/* about */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span {
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.about-text h2 {
+    font-size:3.5rem;
+    color: red;
+}
+
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+    color: aqua;
+}
+.about-text .fs{
+    font-size:2.5rem;
+    color: rgb(138, 19, 189);
+}
+.heading {
+    text-align: center;
+
+}
+
+.heading span {
+    color: red;
+    font-weight: 500;
+}
+
+.heading h2{
+    font-size: 3.5rem;
+}
+/* service */
+.service {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.service-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.Hoop-text span {
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.Hoop-text h2 {
+    font-size:3.5rem;
+    color: red;
+}
+
+.Hoop-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+    color: aqua;
+}
+.Hoop-text .hoop{
+    font-size:2.5rem;
+    color: rgb(138, 19, 189);
+}
+
+.heading {
+    text-align: center;
+
+}
+
+.heading span {
+    color: red;
+    font-weight: 500;
+}
+
+.heading h2{
+    font-size: 3.5rem;
+}
+/* FOOTER */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+ 
+ }
+ 
+ .footer{
+     padding: 10px 0;
+ }
+ 
+ .col{
+     width: 25%;
+ }
+ 
+ .col h4{
+     font-size: 1.2rem;
+     color: white;
+     margin-bottom: 25px;
+     position: relative;
+ }
+ 
+ .col h4::before{
+     content: "";
+     position: absolute;
+     height: 2px;
+     width: 50px;
+     left: 0;
+     bottom: -8px;
+     background: blue;
+ }
+ 
+ .col ul li:not(last-child) {
+     margin-bottom: 15px;
+ }
+ 
+ .col ul li a{
+     color: #9897a9;
+     font-size: 1.1rem;
+     display: block;
+     text-transform: capitalize;
+     transition: .4s;
+ }
+ 
+ .col ul li a:hover{
+     color: white;
+     transform: translateX(-12px);
+ }
+ 
+ .col .social {
+     width: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .col .social a{
+     height: 40px;
+     width: 40px;
+     background: red;
+     color: white;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.5rem;
+     border-radius: 50%;
+     transition: .4%;
+ }
+ 
+ .col .social a:hover{
+     transform: scale(1.2);
+     color: #13131a;
+     background: blueviolet;
+ }
